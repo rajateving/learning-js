@@ -9,3 +9,9 @@
 //array .from converts a input to arrray
 // if array.from cant do it then empty array is returned
 //array.of can make array from given elements
+const nums = [1, 2, 3];
+const doubled = Array.from(nums, num => num * 2);
+console.log(doubled); // Output: [2, 4, 6]
+const set = new Set([1, 2, 3]);
+const arrFromSet = Array.from(set);
+console.log(arrFromSet); // Output: [1, 2, 3]
