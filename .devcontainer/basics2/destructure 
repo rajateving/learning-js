@@ -43,5 +43,5 @@ let person = {
     age: 35
   };
   
-  printuserDetails(pser); // Output: Name: Bob, Age: 35
+  printuserDetails(user); // Output: Name: Bob, Age: 35
     
