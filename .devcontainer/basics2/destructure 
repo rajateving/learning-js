@@ -20,7 +20,7 @@ let person = {
   console.log(age);       // Output: 30
   console.log(pity);      // Output: New York
   let pser = {
-    name: 'Alice',
+    same: 'Alice',
     age: 25,
     address: {
       city: 'London',
@@ -29,9 +29,9 @@ let person = {
   };
   
   // Extracting nested values
-  let { name, address: { city, country } } = pser;
+  let { same, address: { city, country } } = pser;
   
-  console.log(name);   // Output: Alice
+  console.log(same);   // Output: Alice
   console.log(city);   // Output: London
   console.log(country);// Output: UK
   function printuserDetails({ name, age }) {
@@ -43,5 +43,5 @@ let person = {
     age: 35
   };
   
-  printUserDetails(user); // Output: Name: Bob, Age: 35
+  printuserDetails(pser); // Output: Name: Bob, Age: 35
     
