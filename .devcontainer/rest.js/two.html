@@ -1,0 +1,13 @@
+//get element by id is there
+//get element by class is there
+// Assuming nodeList is your NodeList obtained from DOM manipulation
+let nodeList = document.querySelectorAll('.some-selector');
+
+// Step 1: Convert NodeList to Array
+let arrayFromNodeList = Array.from(nodeList);
+
+// Step 2: Iterate over the array
+arrayFromNodeList.forEach(element => {
+    // Do something with each element
+    console.log(element);
+});
